@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.example.ericl.oppfestpoc.MainActivity"
+    tools:showIn="@layout/activity_main">
+
+
+    <ImageButton
+        android:id="@+id/logo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="114dp"
+        android:background="@null"
+        android:contentDescription="@string/todo"
+        app:srcCompat="@drawable/gomilogo2"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="16dp" />
+
+    <TextView
+        android:id="@+id/productName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/logo"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="29dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="@string/s_h_i_f_t"
+        android:textAppearance="@style/TextAppearance.AppCompat"
+        android:textSize="42sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/productName"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="24dp"
+        android:fontFamily="@font/roboto_bold"
+        android:text="Main Menu"
+        android:textColor="@android:color/black"
+        android:textSize="65sp" />
+
+    <Button
+        android:id="@+id/items"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/expiry"
+        android:layout_alignStart="@+id/expiry"
+        android:layout_below="@+id/textView3"
+        android:layout_marginTop="29dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/holo_green_light"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="125dp"
+        android:paddingRight="125dp"
+        android:text="Items"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/expiry"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/receipts"
+        android:layout_alignStart="@+id/receipts"
+        android:layout_below="@+id/items"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/holo_red_light"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:text="Expiry Dates"
+        android:textSize="56sp" />
+
+    <Button
+        android:id="@+id/receipts"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/expiry"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="19dp"
+        android:background="@drawable/roundedbutton"
+        android:backgroundTint="@android:color/holo_blue_bright"
+        android:fontFamily="@font/roboto_bold"
+        android:paddingLeft="80dp"
+        android:paddingRight="80dp"
+        android:text="receipts"
+        android:textSize="56sp" />
+
+</RelativeLayout>
